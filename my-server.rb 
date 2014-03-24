@@ -1,0 +1,17 @@
+require 'sinatra'
+require 'sinatra/reloader'
+
+set  :bind, '0.0.0.0' #vagrant
+
+get '/hello' do
+  "hello friends"
+end
+
+post '/entries' do
+    title = params[:title]
+    body = params[:body]
+    # then do something using title and body here
+end
+
+
+
